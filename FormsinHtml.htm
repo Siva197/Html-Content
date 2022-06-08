@@ -1,0 +1,141 @@
+<!--  Forms in HTML 
+      We are going to learn the forms in html 
+	 * How these forms are useful to the webpages ? 
+     Ans . whenever we need to take the information from the user  we use the forms . 
+  There are three main attributes while creating the form . 
+   action -- This attribute allows to send the data of the user to the specified server by the client .   
+   Method -- This allows to send the data in the privacy mode and also in the non privacy mode by the key values get and post 
+             * If we use the get key value then the information will be sent to the server in the form by adding question mark to the server link and key value pairs . 
+			 *  If we use the post key value then the information will be sent the server in the hidden form . 
+   target -- This allows to open the successfull/failure/error page in the same webpafe or in the new webpage using the _self and _blank .
+	 -->
+<!DOCTYPE html>	 
+<html>  
+<head> 
+<title> Forms in HTML </title> 
+</head> 
+<body>  
+      <form method ="get" action="www.sivasaiteja.in" target ="_self">  
+    
+	<!-- To get the input  we have the input element (which is self closing tag ) 
+	     * we have attributes to get the different inputs from the user are username , password, checkbox , radio ,date,button , hidden , email , file etc . 
+		     we will be using these all attibutes of the input element . --> 
+	<!-- We can just print the message infront of the different input boxes in the body itself or we can use the label tag . --> 
+	
+	<h3> Sign up with your details to enter the website </h3> 
+	
+    <input type = "username" /> username   <!-- This allows to enter the name in mixed datatypes and it has no count to enter the characters-->
+	<br/><br/> 
+	
+	<input type = "password"/> password  <!-- To enter the password if we type=username the content will be displayed which is very risky --> 
+	 <br/><br/>  
+	  
+	  Hobbies 
+	  
+	 <input type = "checkbox"/> Surfing internet  <!-- checkbox allows to select the mltiple choices .--> 
+     <input type = "checkbox"/> Watching Netflix  
+     
+    <br/><br/> 	  
+	 Gender 
+	<input type = "radio"  name="s"/> Male  <!--  Radio will allows to select only one option from the given two or three options we have to group them by using the same name-->
+	<input type = "radio" name="s"/> Female  
+	
+	<br/><br/>  
+	
+    DOB 
+	<input type = "date" /> Date-Of-Birth  <!--  This allows to enter the date of birth in the specific order dd-mm-yyyyy format--> 
+	
+	<br/><br/> 
+	
+	Email 
+	<input type ="email" /> Enter email <!-- This allows to enter the only email strcuture if its not that structure then it will restrict the user to enter the email in a standard structure -->
+	
+	<br/><br/> 
+	
+	Upload your latest image 
+	<input type ="file"/>Image <!-- It allows to uplaod the file of any kind image,video and also a text document and it will show the name of the file that you have uploaded -->  
+	
+	 
+
+	<br/><br/> 
+	Country 
+	<!-- Whenever we want to select a option from list of the options we can use the select tag and it allows to select the multiple options --> 
+	<select >  
+	<!-- Whenever you want to sleect a option we have to insert the options into the selection list we have to use the select --> 
+	<option>India</option> 
+	<option>USA</option> 
+	<option>AUSTRAILIA</option>
+    <option>RUSSIA</option>  
+<!-- We can also select the multiple options from the list just we have to give the multiple (method in the select tag --> 	
+	</select>  
+	
+	<br/><br/>   
+	
+	<!-- Whenever we want take the information from the user like about himself our the user need to give the complaint regarding issue , we just need an textarea at that time 
+	      * For that we have the textarea tag and the size of the textare will be default to submit the data in the one row and columns to store the fifteen characters . 
+	 	 * We will get the minimise option at the leftmost corner of the textarea box-->  
+	About Yourself 
+   <textarea rows="5" cols="30"> 
+   </textarea> 
+	<br/><br/> 
+<!-- We are having the two types of button one is the button and other type is the submit whenever we are using the forms we have to use the submit button only --> 
+<button type ="submit" style = "background-color:red;color:white"> 
+ REGISTER 
+</button> 	
+</form> 
+</body> 
+</html> 
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Form </title>
+  </head>
+  <body>
+    <h3> Sign Up with the details to enter into the webiste</h3> 
+    <form method="post" action="codepen.io" target = _blank> 
+      <label> Enter FullName : </label> 
+      <input  type ="text" name = "fname"/> <br/><br/>
+      <label>  Enter Password : </label> 
+      <input type = "password" name="fpassword" /> <br/><br/> 
+      <label> Enter DateOfBirth </label>
+      <input type="date" name="date"/>
+      <br/><br/>
+      <label>Enter gmail : </label> 
+      <input type="email" name="fmail" /> 
+     <br/> 
+      <h3> Hobbies </h3> 
+      <label>Surfing internet </label>
+      <input type ="checkbox" name="ch1"> 
+      <label> watching Netflix </label>
+      <input type="checkbox" name ="ch2">       <br/> 
+      <h3> Gender </h3> 
+      <label> Female </label>
+      <input type="radio" name="s"/>
+      <label> Male </label>
+      <input type="radio" name="s"/> 
+       <label> Others </label>
+       <input type ="radio" name="s"/>  
+      <br/> </br>
+      <label> Country </label> 
+      <select> 
+        <option>India</option>
+        <option>USA</option>
+        <option>Canada</option>
+        <option>Australia</option>
+        <option>Germany</option>
+        </select> 
+    <br/><br/>
+    <label> Upload your latest image </label>
+    <input type="file" name="image"/>
+    <br/> <br/>
+    <label> About Yourself </label>
+    <textarea rows ="10" cols="20">
+    </textarea>
+    <br/> <br/>
+    <input type ="submit" />
+    <button > register </button>
+    </form>
+  </body>
+</html> 
+-->

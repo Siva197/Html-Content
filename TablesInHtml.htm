@@ -1,0 +1,63 @@
+<!--        Tables in html 
+     * We are going to learn about the tables in the html in depth 
+	 
+	 * To attach a table in the web page we have an table tag 
+	 * Each row can be created using the tr tag 
+	 * To specify the header in the table we have an th tag 
+	 * After specifying the rows to keep data in the table we have an td tag 
+	 * And also we have so many attributes to customise the table . 
+	 --> 
+<!DOCTYPE html> 
+<html> 
+<head>  
+<title> Tables in HTMl </title> 
+</head> 
+<body>  
+<table border ="2" width = "400" height = "400" cellpadding="40" cellspacing = "10">  
+<!-- Intially the borders will not be created we have to use the border attribute to get the border of the table and we can also specify the thickness of the border
+    * We can also specify the dimensions of the table using the attributes width and height . 
+	* If we observe the table the headers of the table will bold by default and their alignment also is to center by default 
+	* But for the cells in the table which contains data will not have the bold text and also the alignment is also set to left 
+	* To specify these we have cellpadding and cellspacing 
+	What are these cellpadding and the cellspacing ?  
+  * cellpadding allows to move the content from to left to right 
+  * cellspacing is the space between two cells 
+  * We have to specify these attributes in the table tag itself 
+ ** There are scenarios where we need to an row to be a=oocupied more than one row to expand the span of row we have an rowspan attribute and simillarly we have an colspan . 
+ -->
+<tr>  
+<th>S.No</th>
+<th> Name </th>
+<th> Relation </th> 
+</tr>  
+
+<tr> 
+<td >1</td>
+<td>B.VenkaraRamana</td> 
+<td>Husband</td>  
+</tr>  
+
+<tr> 
+<td>2</td>
+<td>B.Chandrika</td> 
+<td>Wife</td>  
+</tr> 
+
+<tr> 
+<td>3</td>
+<td>B.Dinesh</td> 
+<td>1st Son</td>  
+</tr>
+ 
+<tr> 
+<td>4</td>
+<td>B.Siva Sai Teja</td> 
+<td>2nd Son</td>  
+</tr> 
+
+</table> 
+</body> 
+</html> 
+
+
+

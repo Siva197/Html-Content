@@ -1,0 +1,33 @@
+<!-- We are going to learn the Frames in Html 
+     This is an deprecated topic we can use this util the  next version of Html arrives .
+       
+$ What do you mean by the Frames ? 
+     * Frames can be used to display the mutliple webpages in a single webpage . 
+     * But we have an another disadvantage of using the frames . Frames will be fixed space , it treats as screen as 1s 100% and then we can't see the content . 
+	 * It's just like an photo frame . --> 
+<!DOCTYPE html> 
+<html>
+<head> 
+<title>Frames in Html</title>
+</head> 
+<frameset rows = 15%,*,8%> 
+<!--  We can divide the frame into rows and columns , you can divide into many many parts , but i am dividing into three parts -->
+<!-- We are not able to see anything in the webpage after dividing it into parts ,
+     for that we need create separate files for the divided percentage and want to place in the frame --> 
+	 <frame src ="Header.htm">
+	  
+	  <frameset cols = 50%,*> 
+	 <frame src ="Content.htm"> 
+	 <frame src ="Content.htm"> 
+	 </frameset> 
+	 
+	 <frame src ="Footer.htm"> 
+	 
+	<!--<noframes>  
+	 <body> Your browser doesnot support the frames </body> 
+	 </noframes> --> 
+	 
+</frameset> 
+</html>
+
+	 
